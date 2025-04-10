@@ -1,0 +1,32 @@
+.signup-page {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.signup-page .signup-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 13px;
+}
+
+.signup-page .signup-button:hover {
+    background-color: #1e7e34;
+}
+.already-account {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+}
+.already-account a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.already-account a:hover {
+    text-decoration: underline;
+}

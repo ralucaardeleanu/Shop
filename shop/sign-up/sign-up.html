@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SIGN-UP</title>
+        <link rel="stylesheet" href="/common/style.css" />
+        <link rel="stylesheet" href="/sign-up/sign-up-styles.css" />
+        <script src="/sign-up/sign-up.js" defer></script>
+    </head>
+    <body>
+        <div class="signup-page">
+            <h2>Înregistrare</h2>
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Nume complet</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Ex: Ana Popescu"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Dată Naștere</label>
+                    <input type="date" id="birthdate" name="birthdate" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="exemplu@email.com"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password">Parolă</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Creează o parolă"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmă parola</label>
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm-password"
+                        placeholder="Repetă parola"
+                    />
+                </div>
+                <button type="submit" class="signup-button">
+                    Creează cont
+                </button>
+                <div class="already-account">
+                    Ai deja cont?
+                    <a href="/log-in/log-in.html">Autentifică-te aici</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
