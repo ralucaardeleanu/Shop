@@ -40,6 +40,39 @@ const usersData = [
     ],
 ];
 
+export const fetchUser = (user) => {
+    return new Promise((resolve, reject) => {
+        const { fullName, birthDate, email, password, confirmPassword } = user;
+
+        setTimeout(() => {
+            let users = JSON.parse(localStorage.getItem("users"));
+            const userExist = users.find(
+                (user) => user.email === email && user.password === password
+            );
+
+            if (userExist) {
+                reject("The user already exists");
+            } else if (password.length < 6) {
+                reject("Password must be at least 6 characters.");
+            } else if (password !== confirmPassword) {
+                reject("Password must be at least 6 characters.");
+            } else {
+                const newUser = {
+                    nume: fullName,
+                    birthDate: birthDate,
+                    email: email,
+                    password: password,
+                    confirmPassword: confirmPassword,
+                };
+                users.push(newUser);
+
+                localStorage.setItem("users", JSON.stringify(users));
+                resolve("Account created successfully!");
+            }
+        }, 1000);
+    });
+};
+
 signUpButtonEl.addEventListener("click", (e) => {
     e.preventDefault();
 
@@ -49,13 +82,20 @@ signUpButtonEl.addEventListener("click", (e) => {
     const password = signUpPasswordEl.value;
     const confirmPassword = confirmPasswordEl.value;
 
-    if (password.length < 6) {
-        alert("Parola trebuie să aibă cel puțin 6 caractere.");
-    } else if (password !== confirmPassword) {
-        alert("Parolele nu coincid.");
-    } else {
-        console.log("Parola este validă!");
-    }
+    fetchUser({
+        fullName,
+        birthDate,
+        email,
+        password,
+        confirmPassword,
+    })
+        .then((message) => {
+            alert(message);
+            window.location.href = "/index.html";
+        })
+        .catch((error) => {
+            alert(error);
+        });
 
     console.log(
         fullName +
