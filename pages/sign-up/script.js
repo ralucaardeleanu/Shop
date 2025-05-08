@@ -1,4 +1,4 @@
-import { saveUser } from "./../../services/user.js";
+import { saveUser } from "/services/user.js";
 
 const signUpEl = document.querySelector(".signup-page");
 const signUpNameEl = signUpEl.querySelector("#fullname");
@@ -26,7 +26,7 @@ signUpButtonEl.addEventListener("click", (e) => {
 	})
 		.then((response) => {
 			alert("Userul a fost inregistrat");
-			window.localStorage.setItem("app-user", response);
+			window.localStorage.setItem("app-user", JSON.stringify(response));
 			window.location.href = "/index.html";
 		})
 		.catch((error) => {

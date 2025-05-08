@@ -1,184 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Products</title>
-        <link rel="stylesheet" href="./style.css" />
-     
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <img src="../img/logo.png" alt="E-Shop Logo" class="logo" />
-                <div class="header-actions">
-                    <input
-                        type="text"
-                        placeholder="Search products..."
-                        class="search-bar"
-                    />
-                    <a href="#">
-                        <img
-                            src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-                            alt="User"
-                            class="icon"
-                    /></a>
-                    <a href="#"></a>
-                        <img
-                            src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
-                            alt="Cart"
-                            class="icon"
-                    /></a>
-                </div>
-            </header>
-            <main class="main">
-                <div class="prod-container">
-                    <img
-                        src="https://s13emagst.akamaized.net/products/53458/53457332/images/res_64cc3ef89a16222a64d98161215c6243.jpg?width=720&height=720&hash=333ACB48E583DF291926E003863AE0F7"
-                        alt="Wireless Headphones"
-                    />
-                    <h2 class="prod-name">Wireless Headphones</h2>
-                    <div class="prod-description">
-                        Noise-cancelling over-ear headphones with 30h battery
-                        life.
-                    </div>
-                    <div class="price">$199</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Products</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="/assets/common.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<img src="../../assets/logo.png" alt="E-Shop Logo" class="logo" />
+				<div class="header-actions">
+					<input type="text" placeholder="Search products..." class="search-bar js-search-products" />
+					<a href="/pages/account/index.html" title="Account">
+						<img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="User" class="icon"
+					/></a>
+					<a href="/pages/cart/index.html" title="Cos">
+						<img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart" class="icon"
+					/></a>
+				</div>
+			</header>
 
-                <div class="prod-container">
-                    <img
-                        src="https://m.media-amazon.com/images/I/71GsDAbysoL._AC_UY327_FMwebp_QL65_.jpg"
-                        alt="Smartwatch"
-                    />
-                    <h2 class="prod-name">Smartwatch Fit+</h2>
-                    <div class="prod-description">
-                        Fitness tracking smartwatch with heart rate monitor and
-                        GPS.
-                    </div>
-                    <div class="price">$249</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="prod-container">
-                    <img
-                        src="https://m.media-amazon.com/images/I/61XogzWL2zL._AC_UY327_FMwebp_QL65_.jpg"
-                        alt="Mechanical Keyboard"
-                    />
-                    <h2 class="prod-name">Mechanical Keyboard</h2>
-                    <div class="prod-description">
-                        RGB backlit mechanical keyboard with customizable
-                        switches.
-                    </div>
-                    <div class="price">$129</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="prod-container">
-                    <img
-                        src="https://m.media-amazon.com/images/I/61l5dMnGNBL._AC_UY327_FMwebp_QL65_.jpg"
-                        alt="Wireless Mouse"
-                    />
-                    <h2 class="prod-name">Wireless Mouse</h2>
-                    <div class="prod-description">
-                        Ergonomic wireless mouse with ultra-precise tracking.
-                    </div>
-                    <div class="price">$49</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="prod-container">
-                    <img
-                        src="https://m.media-amazon.com/images/I/61d46oYQgdL._AC_UY327_FMwebp_QL65_.jpg"
-                        alt="Tablet"
-                    />
-                    <h2 class="prod-name">Tablet S12</h2>
-                    <div class="prod-description">
-                        Lightweight tablet with 12-inch Retina display and
-                        stylus support.
-                    </div>
-                    <div class="price">$699</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="prod-container">
-                    <img
-                        src="https://m.media-amazon.com/images/I/51Aexv0GWML._AC_UY327_FMwebp_QL65_.jpg"
-                        alt="External SSD"
-                    />
-                    <h2 class="prod-name">External SSD 1TB</h2>
-                    <div class="prod-description">
-                        High-speed portable SSD with 1TB storage capacity.
-                    </div>
-                    <div class="price">$149</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="prod-container">
-                    <img
-                        src="https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_UY327_FMwebp_QL65_.jpg"
-                        alt="Gaming Headset"
-                    />
-                    <h2 class="prod-name">Gaming Headset</h2>
-                    <div class="prod-description">
-                        Surround sound headset with microphone for gaming and streaming.
-                    </div>
-                    <div class="price">$89</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                
-                <div class="prod-container">
-                    <img
-                        src="https://m.media-amazon.com/images/I/81l7mB5LhsL._AC_UY327_FMwebp_QL65_.jpg"
-                        alt="Bluetooth Speaker"
-                    />
-                    <h2 class="prod-name">Bluetooth Speaker</h2>
-                    <div class="prod-description">
-                        Portable waterproof Bluetooth speaker with powerful sound.
-                    </div>
-                    <div class="price">$59</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                
-                <div class="prod-container">
-                    <img
-                        src="https://m.media-amazon.com/images/I/518AlpsFbEL._AC_UY327_FMwebp_QL65_.jpg"
-                        alt="Smartphone Stand"
-                    />
-                    <h2 class="prod-name">Smartphone Stand</h2>
-                    <div class="prod-description">
-                        Adjustable aluminum stand for phones and tablets.
-                    </div>
-                    <div class="price">$19</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                
-                <div class="prod-container">
-                    <img
-                        src="https://m.media-amazon.com/images/I/61VwfUI+-eL._AC_UY327_FMwebp_QL65_.jpg"
-                        alt="Wireless Charger"
-                    />
-                    <h2 class="prod-name">Wireless Charger</h2>
-                    <div class="prod-description">
-                        Fast wireless charging pad compatible with all smartphones.
-                    </div>
-                    <div class="price">$29</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                
-                <div class="prod-container">
-                    <img
-                        src="https://m.media-amazon.com/images/I/71hI7La85FL._AC_UY327_FMwebp_QL65_.jpg"
-                        alt="External Monitor"
-                    />
-                    <h2 class="prod-name">External Monitor 24"</h2>
-                    <div class="prod-description">
-                        Full HD 24-inch external monitor for office and gaming.
-                    </div>
-                    <div class="price">$199</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                
-            </main>
-        </div>
-    </body>
+			<div class="js-products main"></div>
+		</div>
+		<script type="module" src="./script.js"></script>
+	</body>
 </html>

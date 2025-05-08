@@ -43,6 +43,7 @@ const saveUser = (user) => {
 					password: password,
 					confirmPassword: confirmPassword,
 				};
+
 				users.push(newUser);
 
 				localStorage.setItem("users", JSON.stringify(users));
