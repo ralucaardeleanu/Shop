@@ -1,6 +1,6 @@
-import { addLoaderTo, removeLoaderFrom } from "../../utils/loader.js";
-import { addNotification } from "../../utils/notification.js";
-import { fetchUser } from "./../../services/user.js";
+import { addLoaderTo, removeLoaderFrom } from "/utils/loader.js";
+import { addNotification } from "/utils/notification.js";
+import { fetchUser } from "/services/user.js";
 
 //LOG IN
 const logInEl = document.querySelector(".login-page");

@@ -35,9 +35,8 @@ const renderTotals = (total) => {
 		</p>
 
 		<button class="js-order btn-order" type="button" title="Trimite Comanda">Trimite Comanda</button>
-
-		
 	</div>`;
+
 	totalsEl.innerHTML = totalsString;
 	const orderBtn = totalsEl.querySelector(".js-order");
 	const totalsContainer = totalsEl.querySelector(".totals");

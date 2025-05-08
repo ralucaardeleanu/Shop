@@ -1,4 +1,4 @@
-import { products } from "../pages/listing/products.js";
+import { products } from "/pages/listing/products.js";
 
 const getCartProducts = () => JSON.parse(window.localStorage.getItem("app-cart-products"));
 

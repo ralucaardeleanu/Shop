@@ -1,4 +1,4 @@
-import { saveUser } from "./../../services/user.js";
+import { saveUser } from "/services/user.js";
 
 const signUpEl = document.querySelector(".signup-page");
 const signUpNameEl = signUpEl.querySelector("#fullname");
