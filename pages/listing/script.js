@@ -1,10 +1,43 @@
+import { addToCart } from "../../services/product.js";
+import { addLoaderTo, removeLoaderFrom } from "../../utils/loader.js";
+import { addNotification } from "../../utils/notification.js";
 import { products } from "./products.js";
 
 const productElement = document.querySelector(".js-products");
+const searchEl = document.querySelector(".js-search-products");
+
+let isRequestPending = false;
+
+searchEl.addEventListener("input", (ev) => {
+	const { value: searchValue } = ev.target;
+	const filteredProducts = products.filter((product) =>
+		product.title.toLowerCase().includes(searchValue.toLowerCase())
+	);
+
+	renderProducts(filteredProducts);
+});
 
 const addEventListeners = (container) => {
 	const buttons = container.querySelectorAll("button");
-	[...buttons].forEach((button) => button.addEventListener("click", () => {}));
+	[...buttons].forEach((button) =>
+		button.addEventListener("click", () => {
+			if (isRequestPending) return;
+			isRequestPending = true;
+			const card = button.closest(".prod-container");
+			const id = button.getAttribute("data-id");
+
+			addLoaderTo(card);
+			addToCart(id)
+				.then((response) => {
+					addNotification(response.type, response.message);
+				})
+				.catch((err) => addNotification(err.type, err.message))
+				.finally(() => {
+					removeLoaderFrom(card);
+					isRequestPending = false;
+				});
+		})
+	);
 };
 
 const renderProduct = (product) => {
@@ -16,7 +49,7 @@ const renderProduct = (product) => {
     </div>`;
 };
 
-const renderProducts = () => {
+const renderProducts = (products) => {
 	let html = ``;
 	products.forEach((product) => {
 		html = html + renderProduct(product);
@@ -25,7 +58,5 @@ const renderProducts = () => {
 	productElement.innerHTML = html;
 	addEventListeners(productElement);
 };
-// exemplu storage pt cos clienti
-window.localStorage.setItem("app-cart-products", JSON.stringify([{ userId: 1, products: [1, 2, 3] }]));
 
-renderProducts();
+renderProducts(products);

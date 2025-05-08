@@ -1,0 +1,107 @@
+body {
+	background-color: #f8f7f7;
+}
+
+.header {
+	/* background-color: #dce6f1; */
+	width: 100%;
+	height: auto;
+}
+
+main {
+	margin: 20px 0;
+}
+
+select {
+	padding: 5px 5px;
+}
+
+.cart-card {
+	display: flex;
+	gap: 20px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.product-info p {
+	margin-top: 0;
+}
+
+.product-info {
+	flex-grow: 1;
+}
+
+.cart-card img {
+	width: 150px;
+}
+
+.cart-card button {
+	color: #007bff;
+	background-color: transparent;
+	border: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.header-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #ffffff;
+	width: 100%;
+	padding: 0px 20px; /* 10 sus/jos, 20 stanga/dreapta */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+	width: 110px;
+	height: auto;
+}
+
+.header-actions {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.icon {
+	width: 30px;
+	height: auto;
+	max-width: 100%;
+}
+
+.main-section {
+	display: flex;
+	width: 100%;
+	gap: 20px;
+}
+
+.cart-products {
+	flex: 1;
+}
+
+.totals {
+	background-color: #fff;
+	position: sticky;
+	top: 10px;
+	padding: 20px;
+	text-align: right;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+
+.totals h4 {
+	margin: 0 0 20px;
+}
+
+.btn-order {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}

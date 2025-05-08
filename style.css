@@ -1,49 +1,49 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body,
 html {
-    font-family: "Segoe UI", sans-serif;
-    background: linear-gradient(135deg, #f6f8fc, #dff1ff);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+	font-family: "Segoe UI", sans-serif;
+	background: linear-gradient(135deg, #f6f8fc, #dff1ff);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 8px;
-    color: #555;
-    font-size: 13px;
+	display: block;
+	margin-bottom: 8px;
+	color: #555;
+	font-size: 13px;
 }
 
 .form-group input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 13px;
-    transition: border-color 0.3s;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 13px;
+	transition: border-color 0.3s;
 }
 
 .form-group input:focus {
-    outline: none;
+	outline: none;
 }
 
 button {
-    padding: 12px;
-    width: 100%;
-    border-radius: 8px;
-    font-size: 13px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+	padding: 12px;
+	width: 100%;
+	border-radius: 8px;
+	font-size: 13px;
+	cursor: pointer;
+	transition: background-color 0.3s;
 }

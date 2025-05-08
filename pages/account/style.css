@@ -1,0 +1,77 @@
+body {
+	background-color: #f7f8f8;
+}
+
+.user-area {
+	padding: 20px;
+	width: 100%;
+	background: #659999; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f4791f, #659999); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#f4791f,
+		#659999
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.user-area {
+	border-radius: 8px;
+}
+
+.logo-wrap {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.logo img {
+	width: 150px;
+	border-radius: 50%;
+}
+
+.client-since,
+.user-name {
+	color: #fff;
+}
+
+.user-name h2 {
+	margin: 0;
+}
+
+.flex-1 {
+	flex: 1;
+}
+
+.btn-logout {
+	background-color: #1052e6;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.header-right {
+	align-self: flex-start;
+}
+
+.js-orders-area {
+	width: 100%;
+}
+
+.ord-line {
+	width: 100%;
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+.ord-line img {
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+}
